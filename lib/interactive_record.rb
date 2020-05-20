@@ -60,6 +60,4 @@ class InteractiveRecord
     DB[:conn].execute("SELECT * FROM #{self.table_name} WHERE #{arg.keys[0].to_s} = ?", arg.values[0].to_s)
   end
   
-  
-
 end
